@@ -1,0 +1,53 @@
+
+.select{
+    width:50%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+
+
+img{
+    height: 110px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+
+.h3{
+    margin:0;
+    padding: 0;
+
+}
+
+
+
+.parent { 
+    width: 700px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    justify-content:space-between;
+}
+
+.child{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color:white;
+    text-align: left;
+    vertical-align: top;
+    border-radius: 10px;
+    border-bottom: 15px blue solid;
+
+}
+
+.b{
+    border-bottom: 15px green solid;
+}
+
+.c {
+    border-bottom: 15px red solid;
+
+}
+

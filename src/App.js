@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { useState } from 'react';
+import { FetchData } from './components/FetcchData/FetchData';
+import {DataChart} from './components/dataChart/DataChart'
 function App() {
+
+  let [report ,setReport] = useState({ confirmed:{} , recovered:{} , deaths:{} })
+
+  let [country ,setCountry] = useState('');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <FetchData country ={country} setCountry={setCountry} report={report} setReport={setReport}></FetchData>
+     <DataChart></DataChart>
     </div>
   );
 }
